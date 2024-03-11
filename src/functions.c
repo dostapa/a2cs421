@@ -2,7 +2,7 @@
 // Created by soup99 on 2024-03-08.
 //
 
-#include "functions.h"
+#include "../include/functions.h"
 void takeInputs(unsigned int *vars, float *tightness, float *alpha, float *r){
     printf(" Enter Number of Variables: "); scanf("%u", vars);
 
@@ -17,6 +17,7 @@ void printTuple(tuple t, bool s) {
     else printf("(%u, %u)", t.x, t.y);
 }
 
+//Iterative factorial
 int factorial(int n){
     int accum=1;
     while(n!=0){
@@ -26,6 +27,7 @@ int factorial(int n){
     return accum;
 }
 
+//Combination formula
 int comb(int n, int r){
     int comb = (factorial(n)) / (factorial(r)*(factorial(n-r)));
     return comb;
